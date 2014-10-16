@@ -1,0 +1,10 @@
+.idea/
+.idea/copyright/
+.idea/libraries/
+.idea/scopes/
+target/
+*.zip
+*.sh
+*.bat
+*.csv
+*.iml

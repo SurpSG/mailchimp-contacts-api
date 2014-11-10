@@ -64,6 +64,7 @@ public class MailChimpController {
         List<String> stringList = DataUtils.generateListForRecordToFile(contactDatas);
         String title = FileUtils.getFileNameTimeStamp() + "_ALL_LISTS";
         FileUtils.writeToFile(stringList, title + CSV);
+        FileUtils.showFileSize(title + CSV);
         printContacts(contactDatas);
         messagesPrinter.printMessage("Total: "+contactDatas.size()+" \n");
     }
@@ -78,6 +79,7 @@ public class MailChimpController {
         List<String> stringList = DataUtils.generateListForRecordToFile(contactDatas);
         String title = FileUtils.getFileNameTimeStamp() + "_LIST_ID_"+listId;
         FileUtils.writeToFile(stringList, title + CSV);
+        FileUtils.showFileSize(title + CSV);
         printContacts(contactDatas);
         messagesPrinter.printMessage("Total: "+contactDatas.size()+" \n");
     }
